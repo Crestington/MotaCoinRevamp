@@ -1,39 +1,39 @@
-COLX Core
+MOTA Core
 =====================
 
 Setup
 ---------------------
-[COLX Core](http://colx.org/wallet) is the original COLX client and it builds the backbone of the network. However, it downloads and stores the entire history of COLX transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[MOTA Core](http://mota.org/wallet) is the original MOTA client and it builds the backbone of the network. However, it downloads and stores the entire history of MOTA transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run COLX on your native platform.
+The following are some helpful notes on how to run MOTA on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/colx-qt (GUI, 32-bit) or bin/32/colxd (headless, 32-bit)
-- bin/64/colx-qt (GUI, 64-bit) or bin/64/colxd (headless, 64-bit)
+- bin/32/mota-qt (GUI, 32-bit) or bin/32/motad (headless, 32-bit)
+- bin/64/mota-qt (GUI, 64-bit) or bin/64/motad (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run colx-qt.exe.
+Unpack the files into a directory, and then run mota-qt.exe.
 
 ### OSX
 
-Drag COLX-Qt to your applications folder, and then run COLX-Qt.
+Drag MOTA-Qt to your applications folder, and then run MOTA-Qt.
 
 ### Need Help?
 
-* See the documentation at the [COLX Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [MOTA Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [COLX Forum](http://forum.colx.org/).
-* Join one of our Slack groups [COLX Slack Groups](https://colx.org/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [MOTA Forum](http://forum.mota.org/).
+* Join one of our Slack groups [MOTA Slack Groups](https://mota.org/slack-logins/).
 
 Building
 ---------------------
-The following are developer notes on how to build COLX on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build MOTA on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build COLX on your native platform. 
 
 Development
 ---------------------
-The Pivx repo's [root README](https://github.com/COLX-Project/COLX/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Mota repo's [root README](https://github.com/MOTA-Project/MOTA/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -55,8 +55,8 @@ The Pivx repo's [root README](https://github.com/COLX-Project/COLX/blob/master/R
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [COLX](http://forum.colx.org/) forum.
-* Join the [COLX-Dev](https://colx-dev.slack.com/) Slack group ([Sign-Up](https://colx-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [MOTA](http://forum.mota.org/) forum.
+* Join the [MOTA-Dev](https://mota-dev.slack.com/) Slack group ([Sign-Up](https://mota-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the colxd tests manually, launch src/test/test_colx .
+To run the motad tests manually, launch src/test/test_mota .
 
-To add more colxd tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more motad tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the colx-qt tests manually, launch src/qt/test/colx-qt_test
+To run the mota-qt tests manually, launch src/qt/test/mota-qt_test
 
-To add more colx-qt tests, add them to the `src/qt/test/` directory and
+To add more mota-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

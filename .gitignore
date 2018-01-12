@@ -7,12 +7,12 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/colx
-src/colxd
-src/colx-cli
-src/colx-tx
-src/test/test_colx
-src/qt/test/test_colx-qt
+src/mota
+src/motad
+src/mota-cli
+src/mota-tx
+src/test/test_mota
+src/qt/test/test_mota-qt
 
 # autoreconf
 Makefile.in
@@ -35,8 +35,8 @@ config.log
 config.status
 configure
 libtool
-src/config/colx-config.h
-src/config/colx-config.h.in
+src/config/mota-config.h
+src/config/mota-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -62,7 +62,7 @@ src/qt/test/moc*.cpp
 *.o
 *.o-*
 *.patch
-.colx
+.mota
 *.a
 *.pb.cc
 *.pb.h
@@ -81,12 +81,12 @@ src/qt/test/moc*.cpp
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-colx-qt
-COLX-Qt.app
+mota-qt
+MOTA-Qt.app
 
 # Unit-tests
 Makefile.test
-colx-qt_test
+mota-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -102,7 +102,7 @@ build
 #lcov
 *.gcno
 /*.info
-test_colx.coverage/
+test_mota.coverage/
 total.coverage/
 coverage_percent.txt
 

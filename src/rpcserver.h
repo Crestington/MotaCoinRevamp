@@ -95,7 +95,7 @@ public:
 };
 
 /**
- * COLX RPC command dispatcher.
+ * MOTA RPC command dispatcher.
  */
 class CRPCTable
 {
