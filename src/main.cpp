@@ -1628,7 +1628,7 @@ int64_t GetBlockValue(int nHeight, CAmount nFees, bool fBudgetBlock)
 
     CAmount nSubsidy = 1000 * nBudgetMultiplier;
     if (nHeight == 1)
-        nSubsidy = CAmount(12000000000) * COIN; //premine has no budget allocation
+        nSubsidy = CAmount(65000000) * COIN; //premine has no budget allocation
     else if (nHeight < 151201)
         nSubsidy = 2500 * nBudgetMultiplier;
     else if (nHeight < 302400)

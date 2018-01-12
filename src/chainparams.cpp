@@ -53,11 +53,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 //    timestamp before)
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
-    boost::assign::map_list_of(1, uint256("00000dc8bfcb3ce2b02ebb378ae409353a4bd31a7f5e46951ac08506d591cbd7")) ///
-        (57, uint256("000000e62c81ce3db7a0954ce7573a57f127028cd01dd5bc2c0d31d890b2f46b")) ///
-        (2050, uint256("000000000097133d6e0b0ce0216a632f84273dc4cafad6ea56d54427a7a62e47"))
-        (2090, uint256("00000000001a17b5aaea15479f80b10ace166664e29ae2a575bbdc6126cf0e12"))
-        (3250, uint256("000000000007e3a1bdc37ba87b9621634b8b99a7f1f35fce1704747b43f47361"));
+    boost::assign::map_list_of(999999, uint256("0")); //update checkpoints after a few days of blocks 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
     1506276192, // * UNIX timestamp of last checkpoint block
@@ -107,8 +103,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 120; // ColossusCoinXT: 2 minute
-        nTargetSpacing = 1 * 120;  // ColossusCoinXT: 2 minute
+        nTargetTimespan = 1 * 60; // ColossusCoinXT: 1 minute
+        nTargetSpacing = 1 * 60;  // ColossusCoinXT: 1 minute
         nLastPOWBlock = 10080;
         nMaturity = 90;
         nMasternodeCountDrift = 20;
@@ -117,9 +113,9 @@ public:
         nModifierInterval = 60;
         nModifierIntervalRatio = 3;
         nBudgetPercent = 5;
-        nMinStakeAge = 60*60*24*7; //7 days
+        nMinStakeAge = 60*60*2; //2 hours days
         nMasternodeRewardPercent = 60; // % of block reward that goes to masternodes
-        nRequiredMasternodeCollateral = 10000000 * COIN; //10,000,000
+        nRequiredMasternodeCollateral = 1000000 * COIN; //1,000,000
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -219,7 +215,7 @@ public:
         genesis.nNonce = 2452017;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x1d411bb2686ab8aea4c3a80ea9812f84cf665c164878978af916830d92a5e00f"));
+        assert(hashGenesisBlock == uint256(""));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -285,7 +281,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 51476;
-        assert(hashGenesisBlock == uint256("0x41d203d900885c5ff18d2c550957743a164060a184182fa17ad1d8cff46c7eac"));
+        assert(hashGenesisBlock == uint256(""));
 
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
